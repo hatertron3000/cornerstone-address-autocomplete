@@ -1,7 +1,19 @@
 # Cornerstone
-![tests](https://github.com/bigcommerce/cornerstone/workflows/Theme%20Bundling%20Test/badge.svg?branch=master)
+![tests](https://github.com/hatertron3000/cornerstone-address-autocomplete/workflows/Theme%20Bundling%20Test/badge.svg?branch=master)
 
 Stencil's Cornerstone theme is the building block for BigCommerce theme developers to get started quickly developing premium quality themes on the BigCommerce platform.
+
+# Customizations
+This version of Cornerstone has been modified to implement Google Address Autocomplete on paged in the customer account portal where a shopper may add or update an address.
+
+Changes include:
+- added `settings.google_places_api_key` to `config.json`
+- injected `google_places_api_key` into the JS context in
+  - `templates/pages/account/add-address.html`
+  - `templates/pages/account/add-payment-method.html`
+  - `templates/pages/account/edit-payment-metnod.html`
+- added `assets/js/theme/common/google-address-autocomplete.js`
+- implemented `googleAddressAutocomplete` in `assets/js/theme/account.js`
 
 ### Stencil Utils
 [Stencil-utils](https://github.com/bigcommerce/stencil-utils) is our supporting library for our events and remote interactions.

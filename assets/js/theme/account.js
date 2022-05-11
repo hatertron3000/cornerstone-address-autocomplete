@@ -3,6 +3,7 @@ import _ from 'lodash';
 import nod from './common/nod';
 import Wishlist from './wishlist';
 import validation from './common/form-validation';
+import googleAddressAutocomplete from './common/google-address-autocomplete';
 import stateCountry from './common/state-country';
 import {
     classifyForm,
@@ -60,7 +61,7 @@ export default class Account extends PageManager {
 
         if ($addressForm.length) {
             this.initAddressFormValidation($addressForm);
-
+            googleAddressAutocomplete(this.context.googleApiKey);
             if (this.$state.is('input')) {
                 insertStateHiddenField(this.$state);
             }

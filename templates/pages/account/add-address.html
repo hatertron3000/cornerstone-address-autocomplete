@@ -1,5 +1,7 @@
 {{#partial "page"}}
 
+    {{~inject 'googleApiKey' theme_settings.google_places_api_key}}
+
     {{> components/common/breadcrumbs breadcrumbs=breadcrumbs}}
 
     {{#if forms.address.address_id}}
@@ -39,6 +41,5 @@
 
         </div>
     </div>
-
 {{/partial}}
 {{> layout/base}}

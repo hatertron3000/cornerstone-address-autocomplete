@@ -45,6 +45,7 @@
     "Firefox ESR"
   ],
   "settings": {
+    "google_places_api_key": "<INSERT_GOOGLE_API_KEY>",
     "hide_breadcrumbs": false,
     "hide_page_heading": false,
     "hide_category_page_heading": false,

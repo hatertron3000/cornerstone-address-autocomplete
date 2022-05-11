@@ -1,5 +1,6 @@
 {{#partial "page"}}
 
+    {{~inject 'googleApiKey' theme_settings.google_places_api_key}}
     {{> components/common/breadcrumbs breadcrumbs=breadcrumbs}}
 
     <h2 class="page-heading">{{lang 'forms.payment_methods.edit.heading'}}</h2>
